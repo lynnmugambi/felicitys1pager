@@ -22,16 +22,15 @@ html{
 }
 a {
 	text-decoration: none;
-	color: #380238
+	color: #380238;
 }
 section{
-	
 }
-#page1, #page2, #page3, #page4{
+#page1{
 	height: 700px;
-	width: 100%;
+	width: 100%
 }
-#page1{}
+
 #navbar{
 	position: absolute;
 	z-index: 80;
@@ -57,6 +56,8 @@ section{
 	color: #CC1A0A;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 10px;
+}
+
 }
 #background1{
 	position: absolute;
@@ -85,14 +86,17 @@ section{
 	padding-left: 65%;
 }
 #middlestrip p{
-	margin-top: 100px;
+	margin-top: 0px;
 	color: #170A04;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-family: Wolfinthecity;
+	font-size: 100px;
 	text-align: right;
 	font-stretch: extra-expanded;
 }
-#logo3 {
+#middlestrip p em{
+	color: #CC1A0A;
+}
+/*#logo3 {
 	float: left;
 	width: 400px;
 	font-size: 150px;
@@ -105,10 +109,21 @@ section{
 	color: #CC1A0A;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 10px;
-}
+}*/
 
 #page2{
-	background-color: white;
+	height: 800px;
+	width: 100%;
+}
+#background2{
+	position: absolute;
+	z-index: -30;
+	height: 800px;
+	width :100%;
+}
+#background2 img {
+	width: 100%;
+	height: 800px;
 }
 #page2 p{
 	color: black;
@@ -124,9 +139,13 @@ section{
 
 #page3{
 	background-color: #FFFFFF;
+	height: 700px;
+	width: 100%;
 }
 #page4{
 	background-color: white;
+	height: 700px;
+	width: 100%;
 }
 #navbar{
 	width: 100%;
