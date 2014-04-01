@@ -1,0 +1,147 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+@font-face{
+	font-family: WolfintheCity;
+	src: url("/home/mwendwa/Documents/fonts/maellekeita_wolf-in-the-city/Wolf in the City.ttf"),
+	url("/home/mwendwa/Documents/fonts/maellekeita_wolf-in-the-city/Wolf in the City.otf")
+}
+@font-face{
+	font-family: glamour;
+	src: url("/home/mwendwa/Documents/fonts/Glamor - TTF/Glamor-Light.ttf");
+}
+@font-face{
+	font-family: greatVibes;
+	src: url("/home/mwendwa/Documents/fonts/typesetit_great-vibes/GreatVibes-Regular.ttf");
+}
+
+html{
+	display: block;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: #380238
+}
+section{
+	
+}
+#page1, #page2, #page3, #page4{
+	height: 700px;
+	width: 100%;
+}
+#page1{}
+#navbar{
+	position: absolute;
+	z-index: 80;
+	float: right;
+	padding-right: 20px;
+	background-color: transparent;
+	height: 100px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+#logo {
+	float: left;
+	width: 400px;
+	font-size: 110px;
+	font-family: WolfintheCity;
+	font-weight: normal;
+}
+#logo a{
+	color: #380238;
+}
+#logo2 {
+	font-size: 20px;
+	color: #CC1A0A;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+}
+#background1{
+	position: absolute;
+	z-index: -30;
+	height: 700px;
+	width :100%;
+}
+#background1 img {
+	width: 65%;
+	float:left;
+	height: 700px;
+	left: 0px;
+	border: 1px solid transparent;
+	margin- left: 10px;
+}
+
+#middlestrip{
+	position: absolute;
+	float: right;
+	z-index: 30;
+	width: 30%;
+	height: 200px;
+	border: 1px solid transparent;
+	background-color: transparent;
+	margin-top: 300px;
+	padding-left: 65%;
+}
+#middlestrip p{
+	margin-top: 100px;
+	color: #170A04;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: right;
+	font-stretch: extra-expanded;
+}
+#logo3 {
+	float: left;
+	width: 400px;
+	font-size: 150px;
+	font-family: WolfintheCity;
+	font-weight: normal;
+}
+#logo4 {
+	font-size: 25px;
+	margin-top: 50px;
+	color: #CC1A0A;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+}
+
+#page2{
+	background-color: white;
+}
+#page2 p{
+	color: black;
+	font: bold 18px Sans-serif;
+
+}
+#page2 em{
+	color: #D92700;
+}
+#page2 #special{
+	color: #44DCE5;
+}
+
+#page3{
+	background-color: #FFFFFF;
+}
+#page4{
+	background-color: white;
+}
+#navbar{
+	width: 100%;
+	height: 70px;
+	background-color: #f2f2f2;
+	position: fixed;
+}
+#navbar li{
+	list-style: none;
+}
+#contact h3{
+	font: bold 18px Sans-serif;
+	color: red;
+}
+#contacts p{
+	font: bold 14px Sans-serif;
+	color: white;
+}
