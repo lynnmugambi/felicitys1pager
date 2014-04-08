@@ -4,16 +4,16 @@
 }
 @font-face{
 	font-family: WolfintheCity;
-	src: url("/home/mwendwa/Documents/fonts/maellekeita_wolf-in-the-city/Wolf in the City.ttf"),
-	url("/home/mwendwa/Documents/fonts/maellekeita_wolf-in-the-city/Wolf in the City.otf")
+	src: url("/fonts/maellekeita_wolf-in-the-city/Wolf in the City.ttf"),
+	url("/fonts/maellekeita_wolf-in-the-city/Wolf in the City.otf")
 }
 @font-face{
 	font-family: glamour;
-	src: url("/home/mwendwa/Documents/fonts/Glamor - TTF/Glamor-Light.ttf");
+	src: url("/fonts/Glamor - TTF/Glamor-Light.ttf");
 }
 @font-face{
 	font-family: greatVibes;
-	src: url("/home/mwendwa/Documents/fonts/typesetit_great-vibes/GreatVibes-Regular.ttf");
+	src: url("/fonts/typesetit_great-vibes/GreatVibes-Regular.ttf");
 }
 
 html{
