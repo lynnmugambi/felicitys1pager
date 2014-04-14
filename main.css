@@ -66,12 +66,12 @@ section{
 	width :100%;
 }
 #background1 img {
-	width: 65%;
+	width: 50%;
 	float:left;
 	height: 700px;
 	left: 0px;
 	border: 1px solid transparent;
-	margin- left: 10px;
+	margin- left: 5px;
 }
 
 #middlestrip{
