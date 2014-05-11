@@ -27,7 +27,7 @@ a {
 section{
 }
 #page1{
-	height: 700px;
+	height: 800px;
 	width: 100%
 }
 
@@ -64,13 +64,14 @@ section{
 	z-index: -30;
 	height: 700px;
 	width :100%;
+	top: 100px;
 }
 #background1 img {
 	width: 50%;
 	float:left;
 	height: 700px;
 	left: 0px;
-	border: 1px solid transparent;
+	
 	margin- left: 5px;
 }
 
@@ -109,58 +110,179 @@ section{
 	color: #CC1A0A;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 10px;
-}*/
+	}*/
 
-#page2{
-	height: 800px;
-	width: 100%;
+	#page2{
+		height: 800px;
+		width: 100%;
+	}
+	#background2{
+		position: absolute;
+		z-index: -30;
+		height: 800px;
+		width :100%;
+	}
+	#background2 img {
+		width: 100%;
+		height: 800px;
+	}
+	#page2 p{
+		color: black;
+		font: bold 18px Sans-serif;
+
+	}
+	#page2 em{
+		color: #D92700;
+	}
+	#page2 #special{
+		color: #44DCE5;
+	}
+
+	#page3{
+		background-color: #FFFFFF;
+		height: 700px;
+		width: 100%;
+	}
+	#page3 p{
+		font-size: 90px;
+		color:  #CC1A0A;
+		left: 0px;
+	}
+	#page3 p em{
+		font-size: 50px;
+		color: orange;
+	}
+	#page4{
+		height: 700px;
+		width: 100%;
+	}
+	#background4{
+		position: absolute;
+		z-index: -30;
+		height: 800px;
+		width :100%;
+	}
+	#background4 img {
+		width: 100%;
+		height: 800px;
+	}
+	#navbar{
+		width: 100%;
+		height: 70px;
+		background-color: #f2f2f2;
+		position: fixed;
+	}
+	#navbar li{
+		list-style: none;
+	}
+	#contacts h3{
+		color: red;
+		font-size: 100px;
+		text-shadow: none;
+		font-weight: normal;
+	}
+	#contacts{
+		z-index: 30;
+		position: absolute;
+		top: 0px;
+		text-align: center;
+		left: 280px;
+	}
+	#contacts p{
+		color: white;
+		font-family: greatVibes;
+		font-size: 50px;
+	}
+	/*Now the styles*/
+	/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+	width: 805px;
+	height: 500px;
+	top : 250px;
+	text-align: center;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 30px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
 }
-#background2{
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 70px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 30px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 740px;}
+
+
+.accordian li img {
+	display: block;
+	height: 500px;
+	width: 800px;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	z-index: -30;
-	height: 800px;
-	width :100%;
-}
-#background2 img {
-	width: 100%;
-	height: 800px;
-}
-#page2 p{
-	color: black;
-	font: bold 18px Sans-serif;
+	left: 0; bottom: 0;	
+	width: 720px;	
 
 }
-#page2 em{
-	color: #D92700;
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 50px;
+	font-family: greatVibes;
 }
-#page2 #special{
-	color: #44DCE5;
+#icons li{
+	display: inline-block;
 }
-
-#page3{
-	background-color: #FFFFFF;
-	height: 700px;
-	width: 100%;
+#icons li a span {
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
 }
-#page4{
-	background-color: white;
-	height: 700px;
-	width: 100%;
-}
-#navbar{
-	width: 100%;
-	height: 70px;
-	background-color: #f2f2f2;
-	position: fixed;
-}
-#navbar li{
-	list-style: none;
-}
-#contact h3{
-	font: bold 18px Sans-serif;
-	color: red;
-}
-#contacts p{
-	font: bold 14px Sans-serif;
-	color: white;
+#icons li a:hover span {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
 }

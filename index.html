@@ -9,19 +9,13 @@
 	<!--	<link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="curtain.css">
-<!--	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+	<!--	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="llldemo/stylesheets/style.css"  media="screen" title="no title" >
 	<script type="text/javascript" src="jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="curtain.js"></script>
 	<script type="text/javascript" src="bootstrap.js"></script>
 	<script type="text/javascript">
 		$('.curtains').curtain();
-
-	</script>
-	<script type="text/javascript">
-		if (document.createElement("detect").style.fontStretch === "") {  
-			document.getElementsByTagName("html")[0].className += " fontstretch";  
-		}
 	</script>
 </head>
 
@@ -45,40 +39,71 @@
 	</header>
 
 	<section>
+
 		<div id="page1"><a id="home"></a>
 			<div id = "background1" >
 				<img src="stock-photos/Stock Photographs/dress.jpg">
 				<div id="middlestrip">
-					<p class="fontstretch"> Fashion. <em>Meets.</em> Elegance. </p>
+					<p> Fashion. <em>Meets.</em> Elegance. </p>
 				</div>
 			</div>
 		</div>
+
 		<div id="page2"><a id="about"></a>
 			<div id="background2">
 				<img src="stock-photos/Stock Photographs/Mosaic.jpg">
 				<div id = "profilepic">
 					<img src="">
-					<div id = "abouttext">
-						<p> We are a boutique that has been offering top of the class <em>corporate and leisure</em> wear for a decade, and we do so with pleasure. </p> <p> We bring you a wide and never seen before <em>selection</em> to satisfy your every need so that you can grace every <em> occassion </em> in style.  </p>
-						<p id = "special"> -With Love, Felicity's Boutique- </p>
-					</div>
-					<div id="timeline">
-						<img src="">
-					</div>
 				</div>
+<!--				<div id = "abouttext">
+					<img src="">
+					<p> We are a boutique that has been offering top of the class <em>corporate and leisure</em> wear for a decade, and we do so with pleasure. </p> <p> We bring you a wide and never seen before <em>selection</em> to satisfy your every need so that you can grace every <em> occassion </em> in style.  </p>
+					<p id = "special"> -With Love, Felicity's Boutique- </p> 
+				</div>
+				<div id="timeline">
+					<img src="">
+				</div>-->
 			</div>
 		</div>
 
-		<hr />
-		<div id="page3">
-			<a id="products">
-				<div id ="women"></div>
-				<div id ="men"></div>
-				<div id="beauty"></div>
-			</div>
+		<div id="page3"><a id="products"></a>
+			<p> Gallery </br>
+				<em>This is a glimpse of what we have at the boutique, Check it out!</em>
+			</p>
 
-			<div id="page4">
-				<a id="contact"></a>
+			<div class="accordian">
+				<ul>
+					<li>
+						<div class="image_title">
+							<a href="#">Beauty and Accessories</a>
+						</div>
+						<a href="#">
+							<img src="stock-photos/Stock Photographs/beauty.jpg"/>
+						</a>
+					</li>
+					<li>
+						<div class="image_title">
+							<a href="#">Men</a>
+						</div>
+						<a href="#">
+							<img src="stock-photos/Stock Photographs/suits.jpg"/>
+						</a>
+					</li>
+					<li>
+						<div class="image_title">
+							<a href="#">Women</a>
+						</div>
+						<a href="#">
+							<img src="stock-photos/Stock Photographs/smiles.jpg"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="page4"><a id="contact"></a>
+			<div id = "background4" >
+				<img src="stock-photos/Stock Photographs/purplebck.jpg">
 				<div id="storelocator"></div>
 				<div id="contacts">
 					<h3> Get in Touch </h3>
@@ -86,19 +111,32 @@
 					<p>or E-mail :</p>
 					<p> Or better yet, This is how to find us: </p>
 					<p>You can also reach us via Social media :)</p>
+					<div id= "icons">
+						<ul id="social" class="group">
+
+							<li class="twitter"><a href="http://twitter.com/tkenny"><span></span>twitter</a></li>
+							<li class="dribbble"><a href="http://dribbble.com/tkenny"><span></span>dribbble</a></li>
+							<li class="lastfm"><a href="http://www.last.fm/user/KennySim"><span></span>last.fm</a></li>
+							<li class="spotify"><a href="http://open.spotify.com/user/tkenny"><span></span>Spotify</a></li>
+							<li class="ember"><a href="http://emberapp.com/tkenny/"><span></span>ember</a></li>
+							<li class="inspectelement"><a href="http://inspectelement.com"><span></span>Inspect Element</a></li>
+
+						</ul>
+					</div>
 				</div>
-				<div class= "mediaplugin"></div>
+				<div class= "mediaplugin">
+				</div>
 			</div>
-
-		</section>
-
-		<footer>
-
-		</footer>
-
-		
-		<div class="fixed" id= "bottomstuff">
-			<p><a href="#home"> Back to top </a></p>
 		</div>
-	</body>
-	</html>
+
+	</section>
+
+	<footer>
+	</footer>
+
+	<div class="fixed" id= "bottomstuff">
+		<p><a href="#home"> Back to top </a></p>
+	</div>
+
+</body>
+</html>
